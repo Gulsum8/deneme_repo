@@ -1,0 +1,123 @@
+# maas hesabı
+START
+INPUT hours, rate
+pay = hours*rate
+OUTPUT pay
+END
+
+
+# sayı gir ve 10 dan küçük mü büyük mü olduğunu return et
+
+START
+INPUT num
+IF num > 10 
+  OUTPUT sayı 10 dan büyük
+ELSE IF num < 10 
+  OUTPUT sayı 10 dan küçük
+ELSE
+  OUTPUT sayı 10 a eşittir
+END
+
+# kullanıcı sayı girsin tek mi çift mi return etsin
+
+START
+INPUT num
+IF num % 2 == 0
+  OUTPUT çift sayıdır
+ELSE
+  OUTPUT tek sayıdır
+END
+
+# 40 saatten fazla çalısan işçinin maaşını hesaplama
+START
+INPUT hours, rate
+IF hours <= 40 
+pay = hours * rate
+ELSE 
+pay = 40*rate + (hours - 40) * rate * 1.5
+ OUTPUT pay
+END
+
+# kullanıcının girdiği sayı negatif veya pozitif mi
+
+START
+INPUT num
+IF num > 0
+ OUTPUT sayı pozitiftir
+ELSE IF num < 0
+ OUTPUT sayı negatiftir
+ELSE
+ OUTPUT sayı sıfıra eşittir
+END
+
+# kullanıcı 3 sayı girsin ve en büyüğünü return etsin
+
+START                                   VEYA                    START               
+INPUT a,b,c                                                     INPUT a,b,c
+IF a > b && a > c                                               big = a
+ OUTPUT a büyüktür                                               IF b > big
+ELSE IF b > a && b > c                                            big = b
+ OUTPUT b büyüktür                                                IF  c > big
+ELSE                                                               big = c
+ OUTPUT c büyüktür                                                OUTPUT big
+END                                                               END
+
+
+
+# öğrencinin girdiği nota göre basarılı mı değil mi 
+
+START
+INPUT note
+IF 0 <= note < 50
+ OUTPUT başarısız
+ELSE IF 50 <= note <= 100
+ OUTPUT başarılı
+ELSE
+ OUTPUT yanlış giriş yaptın yavrucuğum
+END
+
+# VÜCUT KİTLE ENDEKSİ
+
+START
+INPUT weight, height
+bmi = weight / height **2
+IF bmi <= 18.5
+ OUTPUT underweight
+ELSE IF 18.5 < bmi <= 24.9
+ OUTPUT normal
+ELSE IF 25.0 <= bmi <= 29.9
+ OUTPUT overweight
+ELSE IF 30.0 <= bmi <= 34.9
+ OUTPUT obese
+ELSE 
+ OUTPUT extremly obese
+END
+
+# nakliye hesabı
+START
+INPUT distance
+IF 0 <= distance < 500
+ OUTPUT 50 x fiyat
+ELSE IF 500<= distance < 1000
+ OUTPUT 100 x fiyat
+ELSE
+ OUTPUT 500 x fiyat
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
